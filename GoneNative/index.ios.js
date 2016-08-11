@@ -1,54 +1,21 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, Text, View } from 'react-native';
 
 class GoneNative extends Component {
   render() {
     return (
-      <Text>{"\n"}Hello world!</Text>
-      // <View style={styles.container}>
-      //   <Text style={styles.welcome}>
-      //     Hello World!
-      //   </Text>
-      //   <Text style={styles.instructions}>
-      //     To get started, edit index.ios.js
-      //   </Text>
-      //   <Text style={styles.instructions}>
-      //     Press Cmd+R to reload,{'\n'}
-      //     Cmd+D or shake for dev menu
-      //   </Text>
-      // </View>
+      <View>
+        <Text style={redStyle}>{"\n"}Hello world!</Text>
+        <Text style={redStyle}>Hey there</Text>
+        <Text style={redStyle}>Its a great day</Text>
+        <Text style={redStyle}>truly great</Text>
+      </View>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+const redStyle = {
+  color: 'red'
+}
 
 AppRegistry.registerComponent('GoneNative', () => GoneNative);
